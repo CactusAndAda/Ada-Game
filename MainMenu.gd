@@ -1,6 +1,7 @@
 extends MarginContainer
 
 #preloads the scenes that could be used
+# const is a variable that doesn't change
 const firstScene = preload("res://FirstScene.tscn")
 const optionsMenu = preload("res://OptionsMenu.tscn")
 
