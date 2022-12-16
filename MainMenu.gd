@@ -47,3 +47,5 @@ func set_currtent_selection(_current_selection):
 		selectorTwo.text = ">"
 	elif _current_selection == 2:
 		selectorThree.text = ">"
+
+# ^.^
