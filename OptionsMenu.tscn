@@ -1,0 +1,196 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Born2bSportyV2.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sporty.tres" type="DynamicFont" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Options" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0.447059, 0.701961, 0.364706, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 88.0
+margin_top = 24.0
+margin_right = 231.0
+margin_bottom = 156.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 143.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_left = 28.0
+margin_right = 114.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 2 )
+text = "Options"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 143.0
+margin_bottom = 132.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
+margin_right = 143.0
+margin_bottom = 96.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_right = 143.0
+margin_bottom = 16.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer"]
+margin_left = 18.0
+margin_right = 124.0
+margin_bottom = 16.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 7.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 1 )
+text = ">"
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 11.0
+margin_right = 106.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 2 )
+text = "Volume Controls"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 20.0
+margin_right = 143.0
+margin_bottom = 36.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2"]
+margin_right = 143.0
+margin_bottom = 16.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_right = 7.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 5 )
+text = ">"
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_left = 11.0
+margin_right = 143.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 4 )
+text = "Brightness Calibration"
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 40.0
+margin_right = 143.0
+margin_bottom = 56.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3"]
+margin_left = 35.0
+margin_right = 107.0
+margin_bottom = 16.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_right = 7.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 6 )
+text = ">"
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_left = 11.0
+margin_right = 72.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 7 )
+text = "Sensitivity"
+
+[node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 60.0
+margin_right = 143.0
+margin_bottom = 76.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer4"]
+margin_left = 18.0
+margin_right = 125.0
+margin_bottom = 16.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer4/HBoxContainer"]
+margin_right = 7.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 8 )
+text = ">"
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer4/HBoxContainer"]
+margin_left = 11.0
+margin_right = 107.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 9 )
+text = "Control Settings"
+
+[node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 80.0
+margin_right = 143.0
+margin_bottom = 96.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer5"]
+margin_left = 19.0
+margin_right = 124.0
+margin_bottom = 16.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer5/HBoxContainer"]
+margin_right = 7.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 8 )
+text = ">"
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer5/HBoxContainer"]
+margin_left = 11.0
+margin_right = 105.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 9 )
+text = "Particle Effects"
