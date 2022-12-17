@@ -1,19 +1,23 @@
 extends KinematicBody2D
 
-const ACCELERATION = 350 # add export
-const FRICTION = 100
-const MAX_SPEED = 100
+const ACCELERATION = 500 # add export
+const FRICTION = 300
+const MAX_SPEED = 200
 
+onready var characterSprite = $Sprite
 var velocity = Vector2.ZERO
 
 func _physics_process(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	if input_vector.x < 0:
+		characterSprite.flip_h = true
+	else:
+		characterSprite.flip_h = false
 	input_vector = input_vector.normalized()
 	if input_vector != Vector2.ZERO:
-		velocity += input_vector * ACCELERATION * delta
-		velocity = velocity.clamped(MAX_SPEED * delta) # stop speed at a certain point so it doesn't get too big
+		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-	move_and_collide(velocity)
+	velocity = move_and_slide(velocity)
