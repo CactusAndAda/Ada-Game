@@ -43,7 +43,9 @@ func handle_selection(_current_selection):
 	if _current_selection == 0:
 		get_tree().quit() #quit game
 	elif _current_selection == 1:
-		print("option 2")
+		print("volume option")
+		get_tree().paused = false # unpause the game so it functions correctly when opening the volume menu
+		SceneTransition.change_scene('res://SoundControl.tscn')
 	elif _current_selection == 2:
 		print("option 3")
 

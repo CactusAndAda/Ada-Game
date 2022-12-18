@@ -48,6 +48,7 @@ func handle_selection(_current_selection):
 	# acts on selected action based on whats needed
 	if _current_selection == 0:
 		print("Volume controls")
+		SceneTransition.change_scene('res://SoundControl.tscn')
 	elif _current_selection == 1:
 		print("brightness controls")
 	elif _current_selection == 2:
