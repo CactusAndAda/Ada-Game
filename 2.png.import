@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-02feedd7cbba28c33cf0f6d909bd6d91.stex"
+path="res://.import/2.png-0e33b6133d4576f7c309271d1d83d20b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Super Asset Bundle #2 - Adventure Time v1.3/Paper Pack/Paper UI/Text Box Pointers/2.png"
-dest_files=[ "res://.import/2.png-02feedd7cbba28c33cf0f6d909bd6d91.stex" ]
+source_file="res://Super Asset Bundle #2 - Adventure Time v1.3/Paper Pack/Paper UI/Pages/32x32/2.png"
+dest_files=[ "res://.import/2.png-0e33b6133d4576f7c309271d1d83d20b.stex" ]
 
 [params]
 
