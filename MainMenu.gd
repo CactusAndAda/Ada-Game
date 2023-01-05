@@ -2,8 +2,8 @@ extends MarginContainer
 
 #preloads the scenes that could be used
 # const is a variable that doesn't change
-const firstScene = preload("res://FirstScene.tscn")
-const optionsMenu = preload("res://OptionsMenu.tscn")
+const firstScene = preload("res://NEXUSLAB.tscn")
+const optionsMenu = preload("res://OptionsMenu.tscn")   
 
 onready var selectorOne = $CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer/Selector
 onready var selectorTwo = $CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer/Selector
@@ -41,7 +41,7 @@ func handle_selection(_current_selection):
 	# acts on selected action based on whats needed
 	if _current_selection == 0:
 		#get_parent().add_child(firstScene.instance())
-		SceneTransition.change_scene('res://FirstScene.tscn')
+		SceneTransition.change_scene('res://NEXUSLAB.tscn')
 		#queue_free() # remove the current scene (delete)
 	elif _current_selection == 1:
 		#get_parent().add_child(optionsMenu.instance())
